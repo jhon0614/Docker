@@ -1,0 +1,16 @@
+name: Landing CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar index.html
+        run: test -f index.html
