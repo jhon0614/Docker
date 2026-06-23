@@ -1,16 +1,17 @@
-name: Landing CI
+name: Validar Proyecto
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
 
 jobs:
-  validar:
+  estructura:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verificar index.html
-        run: test -f index.html
+      - name: Verificar CSS
+        run: test -f css/style.css
+
+      - name: Verificar JavaScript
+        run: test -f js/script.js
