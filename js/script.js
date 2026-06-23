@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (button) {
         button.addEventListener("click", () => {
-            alert("Hola desde GitHub Actions 🚀");
+            alert("Hola desde GitHub Actions v2 🚀");
         });
     }
 });
