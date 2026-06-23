@@ -1,7 +1,13 @@
 name: Validar Proyecto
 
 on:
+  push:
+    branches:
+      - main
+
   pull_request:
+    branches:
+      - main
 
 jobs:
   estructura:
