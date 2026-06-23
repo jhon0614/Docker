@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Verificar CSS
-        run: test -f css/style.css
+        run: test -f css/styles.css
 
       - name: Verificar JavaScript
         run: test -f js/script.js
